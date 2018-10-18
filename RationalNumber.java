@@ -55,21 +55,21 @@ public class RationalNumber extends RealNumber{
     b = Math.abs(b);
 
     if (a > b){
-      while(a!=0 && b!=0){ // until either one of them is 0
+      while(a != 0 && b != 0){ // until either one of them is 0
         int c = b;
-        b = a%b;
+        b = a % b;
         a = c;
       }
-      return a+b;
+      return a + b;
     }
 
     if (a < b){
-      while(a!=0 && b!=0){ // until either one of them is 0
+      while(a != 0 && b != 0){ // until either one of them is 0
         int c = a;
-        a = b%a;
+        a = b % a;
         b = c;
       }
-      return a+b;
+      return a + b;
     }
 
     return 1;
